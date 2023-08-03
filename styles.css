@@ -1,0 +1,92 @@
+/* Global styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: black;
+}
+
+/* Styles for the header section */
+header {
+    background-color: black;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Styling for the h1 element inside the header */
+h1 {
+    color: white;
+}
+
+/* Styles for the main content container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Set background colors for different method sets */
+/* Styles for the String Methods section */
+.method-container.method-string {
+    background-color: aquamarine;
+}
+
+/* Styles for the Number Methods section */
+.method-container.method-number {
+    background-color: indianred;
+}
+
+/* Styles for the Array Methods section */
+.method-container.method-array {
+    background-color: khaki;
+}
+
+/* Styles for the Date Methods section */
+.method-container.method-date {
+    background-color: lightgoldenrodyellow;
+}
+
+/* Styles for the Function Methods section */
+.method-container.method-function {
+    background-color: mediumslateblue;
+}
+
+/* Styles for the method containers (String, Number, Array, Date, Function) */
+.method-container {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles for the description and output sections within method containers */
+.description,
+.output {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Styling for the heading (h2) inside the method containers */
+.method-container h2 {
+    margin-top: 0;
+}
+
+/* Styles for the unordered list (ul) inside the description section */
+.description ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Styles for the list items (li) inside the description section */
+.description ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Styling for the <span> elements */
+span {
+    font-weight: bold;
+}

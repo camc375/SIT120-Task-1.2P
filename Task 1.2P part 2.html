@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Design Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>JavaScript Methods Demo</h1>
+    </header>
+
+    <!-- Main content section -->
+    <main class="container">
+
+        <!-- String Methods -->
+        <div class="method-container method-string">
+            <div class="description">
+                <!-- Explanation of String Methods -->
+                <h2>String Methods</h2>
+                <p>JavaScript provides several string methods to manipulate text. Some of them include:</p>
+                <ul>
+                    <li>length: Returns the length of the string.</li>
+                    <li>toUpperCase(): Converts the string to uppercase.</li>
+                    <li>toLowerCase(): Converts the string to lowercase.</li>
+                    <li>substring(startIndex, endIndex): Extracts a portion of the string.</li>
+                    <li>indexOf(searchValue): Returns the index of the first occurrence of a substring.</li>
+                </ul>
+            </div>
+            <div class="output">
+                <!-- Outputs for String Methods -->
+                <h2>Outputs</h2>
+                <p> For the purpose of this demonstration, we will use the string "Hello, World!"</p>
+                <p>1. Length of the string: <span id="output-length"></span></p>
+                <p>2. Uppercase: <span id="output-uppercase"></span></p>
+                <p>3. Lowercase: <span id="output-lowercase"></span></p>
+                <p>4. Substring: <span id="output-substring"></span></p>
+                <p>5. Index of 'World': <span id="output-index"></span></p>
+            </div>
+        </div>
+
+        <!-- Number Methods -->
+        <div class="method-container method-number">
+            <div class="description">
+                <!-- Explanation of Number Methods -->
+                <h2>Number Methods</h2>
+                <p>JavaScript provides several number methods for mathematical operations and formatting. Some of them include:</p>
+                <ul>
+                    <li>toFixed(digits): Formats a number with a fixed number of decimal places.</li>
+                    <li>toPrecision(digits): returns a string, with a number written with a specified length:.</li>
+                    <li>toExponential(digits): Converts a number to exponential notation.</li>
+                    <li>Math.max(...numbers): Returns the maximum value from a list of numbers.</li>
+                    <li>Math.min(...numbers): Returns the minimum value from a list of numbers.</li>
+                </ul>
+            </div>
+            <div class="output">
+                <!-- Outputs for Number Methods -->
+                <h2>Outputs</h2>
+                <p>For the purpose of methods 1-3 of this demonstration, our number will be 12.345. Methods 4-5 will be passed the list 10, 20, 30 40, 50.</p>
+                <p>1. Fixed with two decimals: <span id="output-toFixed"></span></p>
+                <p>2. Number to Precision(2): <span id="output-toPrecision"></span></p>
+                <p>3. Exponential notation: <span id="output-toExponential"></span></p>
+                <p>4. Maximum value: <span id="output-max"></span></p>
+                <p>5. Minimum value: <span id="output-min"></span></p>
+            </div>
+        </div>
+
+        <!-- Array Methods -->
+        <div class="method-container method-array">
+            <div class="description">
+                <!-- Explanation of Array Methods -->
+                <h2>Array Methods</h2>
+                <p>JavaScript provides several array methods to manipulate and work with arrays. Some of them include:</p>
+                <ul>
+                    <li>length: Returns the number of elements in the array.</li>
+                    <li>join(separator): Joins all elements of an array into a string with the specified separator.</li>
+                    <li>push(element1, ..., elementN): Adds one or more elements to the end of an array and returns the new length.</li>
+                    <li>pop(): Removes the last element from an array and returns that element.</li>
+                    <li>indexOf(searchElement, fromIndex): Returns the first index at which a given element can be found in the array.</li>
+                </ul>
+            </div>
+            <div class="output">
+                <!-- Outputs for Array Methods -->
+                <h2>Outputs</h2>
+                <p>For the purpose of this demonstration, one array will contain ['apple', 'banana', 'cherry', 'date'] and another [2, 4, 6] </p>
+                <p>1. Length of the fruit array: <span id="output-arrayLength"></span></p>
+                <p>2. Join array elements into a string: <span id="output-join"></span></p>
+                <p>3. Push element to the end of the number array: <span id="output-push"></span></p>
+                <p>4. Pop element from the end of the number array: <span id="output-pop"></span></p>
+                <p>5. Index of 'banana' in the fruit array: <span id="output-indexOf"></span></p>
+            </div>
+        </div>
+
+        <!-- Date Methods -->
+        <div class="method-container method-date">
+            <div class="description">
+                <!-- Explanation of Date Methods -->
+                <h2>Date Methods</h2>
+                <p>JavaScript provides several date methods to work with dates and times. Some of them include:</p>
+                <ul>
+                    <li>toLocaleDateString(): Returns the date portion of a Date object as a human-readable string in the local time zone.</li>
+                    <li>toLocaleTimeString(): Returns the time portion of a Date object as a human-readable string in the local time zone.</li>
+                    <li>getDay(): Returns the day of the week (0 for Sunday, 1 for Monday, etc.).</li>
+                    <li>getMonth(): Returns the month (0 for January, 1 for February, etc.).</li>
+                    <li>getFullYear(): Returns the year of the date as a four-digit number.</li>
+                </ul>
+            </div>
+            <div class="output">
+                <!-- Outputs for Date Methods -->
+                <h2>Outputs</h2>
+                <p>The outputs for this demonstration are based on the actual date and time; if you refresh the page, you should see the time element change.</p>
+                <p>1. Current date: <span id="output-currentDate"></span></p>
+                <p>2. Current time: <span id="output-currentTime"></span></p>
+                <p>3. Current day of the week: <span id="output-dayOfWeek"></span></p>
+                <p>4. Current month: <span id="output-month"></span></p>
+                <p>5. Current year: <span id="output-year"></span></p>
+            </div>
+        </div>
+
+        <!-- Function Methods -->
+        <div class="method-container method-function">
+            <div class="description">
+                <!-- Explanation of Function Methods -->
+                <h2>Function Methods</h2>
+                <p>JavaScript provides several function methods for handling functions. Some of them include:</p>
+                <ul>
+                    <li>call(thisArg, arg1, arg2, ...): Calls a function with a given this value and arguments provided individually.</li>
+                    <li>apply(thisArg, [argsArray]): Calls a function with a given this value and an array of arguments.</li>
+                </ul>
+            </div>
+            <div class="output">
+                <!-- Outputs for Function Methods -->
+                <h2>Outputs</h2>
+                <p>For this demonstration, we will call the "grtProduct" function, supplied with the individual arguments 4, 5, and then we will apply
+                    the greet function, supplied with an array of arguments ['Larry', 'Moe', 'Tommy']
+                </p>
+                <p>1. Function call: <span id="output-functionCall"></span></p>
+                <p>2. Function apply: <span id="output-functionApply"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

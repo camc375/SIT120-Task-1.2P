@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Demo Page</title>
+    <style>
+        /* Reset default margin and padding for the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styling for the header section */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Styling for the main content section */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex; /* Fluid Layout using Flexbox */
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Styling for paragraphs */
+        p {
+            line-height: 1.6;
+            font-size: 1rem; /* Relative font size using 'rem' */
+        }
+
+        /* Styling for images */
+        img {
+            max-width: 100%; /* Responsive images */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        /* Media Queries for different screen sizes */
+        @media screen and (max-width: 600px) {
+            p {
+                font-size: 0.9rem; /* Font size adjustment for smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            p {
+                font-size: 0.8rem; /* Font size adjustment for even smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RESPONSIVE WEB DESIGN DEMO PAGE</h1>
+    </header>
+    <div class="content">
+        <!-- Responsive image with an alternative text -->
+        <img src="https://www.dailypaws.com/thmb/DQfQglzyKWlVSlsDwKPprF2iMSg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/golden-retriever-177213599-2000-a30830f4d2b24635a5d01b3c5c64b9ef.jpg" alt="Responsive Image" />
+        
+        <p>
+            <!-- Explanation of Responsive Web Design (RWD) -->
+            Responsive Web Design (RWD) is an approach to web design that makes web pages render well on a variety of devices and window sizes. This technique ensures that the same web page adapts to different screen resolutions and devices, such as desktop computers, laptops, tablets, and smartphones.
+        </p>
+        <p>
+            <!-- Benefits of using Responsive Web Design -->
+            When a user resizes the window of their browser, a responsive web page will automatically adjust its layout and elements to fit the new screen size. This eliminates the need for separate designs for each device and creates a better user experience, regardless of the device being used.
+        </p>
+        <p>
+            <!-- Encouragement to interact with the demo -->
+            Go ahead and resize the browser window to see the responsive web design in action!
+        </p>
+    </div>
+</body>
+</html>
